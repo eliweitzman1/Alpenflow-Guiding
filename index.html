@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alpenflow Guiding</title>
-<meta name="description" content="Guided ski adventures around the globe with professional guides.">
+<meta name="description" content="Unique guided ski adventures across the globe.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9B%B0%EF%B8%8F%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,6 +60,12 @@ th,td{text-align:left;padding:.85rem .5rem;border-bottom:1px solid var(--ice)}
 td:last-child,th:last-child{text-align:right}
 .note{color:var(--muted);font-size:1rem;margin-top:1rem}
 
+#ski{background:linear-gradient(rgba(16,27,35,.62),rgba(16,27,35,.62)),url("images/ski.jpg") center/cover no-repeat;color:#fff}
+#ski .services p{color:#E6EEF2}
+#ski .services h3{border-top-color:#fff}
+#education{background:linear-gradient(rgba(16,27,35,.62),rgba(16,27,35,.62)),url("images/education.jpg") center/cover no-repeat;color:#fff}
+#education .services p{color:#E6EEF2}
+#education .services h3{border-top-color:#fff}
 footer{background:var(--night);color:#E6EEF2;padding:2rem 0}
 footer h2{color:#fff}
 footer .btn{margin-top:1rem}
@@ -74,8 +80,10 @@ footer small{display:block;color:#9DB1BD}
   <div class="wrap">
     <a class="logo" href="#top">Alpenflow Guiding</a>
     <nav aria-label="Main">
-      <a href="#trips">What we guide</a>
-      <a href="#guides">Guides</a>
+      <a href="#ski">Ski</a>
+      <a href="#education">Education</a>
+      <a href="#guides">Our Guides</a>
+      <a href="#contact">Contact Us</a>
     </nav>
   </div>
 </header>
@@ -84,24 +92,46 @@ footer small{display:block;color:#9DB1BD}
   <div class="hero">
     <div class="wrap">
       <h1>Alpenflow Guiding</h1>
-      <p class="lead">Guided ski adventures around the globe with professional guides.</p>
+      <p class="lead">Unique guided ski adventures across the globe</p>
+      <p><a class="btn" href="mailto:info@alpenflowguiding.com">Contact us</a></p>
     </div>
   </div>
 
-  <section id="trips">
+  <section id="ski">
     <div class="wrap">
-      <h2>What we guide</h2>
+      <h2>Ski</h2>
       <div class="services">
-        <div><h3>Backcountry ski touring</h3></div>
-        <div><h3>Avalanche courses</h3></div>
-        <div><h3>Snowcat skiing</h3></div>
+        <div>
+          <h3>Backcountry Skiing</h3>
+          <p>Leave the lift lines behind and experience ski serenity with us! Explore untouched snow in Japan and Colorado. We can accommodate experience levels.</p>
+        </div>
+        <div>
+          <h3>Snowcat Skiing</h3>
+          <p>Want to experience backcountry skiing without all the hiking uphill? We offer private cat skiing trips in Crested Butte and Jones Pass, Colorado.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="guides" class="band">
+  <section id="education" class="band">
     <div class="wrap">
-      <h2>Our guides</h2>
+      <h2>Education</h2>
+      <div class="services">
+        <div>
+          <h3>Avalanche Courses</h3>
+          <p>Be prepared in the backcountry!  Our courses use the AIARE curriculum to teach you the essentials for navigating avalanche terrain.</p>
+        </div>
+        <div>
+          <h3>Wilderness Medicine</h3>
+          <p>Do you have the training to deal with an emergency in the backcountry? Our courses use the Desert Mountain Medicine curriculum to prepare you for medical emergencies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="guides">
+    <div class="wrap">
+      <h2>Our Guides</h2>
       <div class="services">
         <div><h3>Eli Weitzman</h3></div>
         <div><h3>Elise Brizes</h3></div>
@@ -110,9 +140,11 @@ footer small{display:block;color:#9DB1BD}
   </section>
 </main>
 
-<footer>
+<footer id="contact">
   <div class="wrap">
-    <small>&copy; 2026 Alpenflow Guiding</small>
+    <h2>Contact Us</h2>
+    <a class="btn" href="mailto:info@alpenflowguiding.com">Email info@alpenflowguiding.com</a>
+    <small style="margin-top:1.5rem">&copy; 2026 Alpenflow Guiding</small>
   </div>
 </footer>
 
