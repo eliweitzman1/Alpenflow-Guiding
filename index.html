@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpenflow Guiding</title>
+<meta name="description" content="Unique guided ski adventures across the globe.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9B%B0%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --snow:#F2F6F8; --ice:#DCE8ED; --glacier:#6C9BAE; --slate:#1B2B36; --night:#101B23; --glow:#C9506E;
+  --text:#1B2B36; --muted:#4D626F;
+  --head:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--snow:#101B23; --ice:#18262F; --text:#E6EEF2; --muted:#9DB1BD; --slate:#E6EEF2}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--snow);color:var(--text);font:400 1.125rem/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--glow);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+p{max-width:62ch}
+
+header.site{position:absolute;inset:0 0 auto;z-index:2}
+header.site .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:1.25rem;padding-bottom:1.25rem;color:#101B23}
+.logo{font:700 1.25rem var(--head);text-decoration:none}
+nav a{margin-left:1.5rem;text-decoration:none;font-weight:600}
+nav a:hover{text-decoration:underline}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-start;background:#E9E6EC url("images/hero.jpg") center bottom/cover no-repeat;color:var(--night);padding:8rem 0 4rem}
+.hero .wrap{width:100%}
+.hero h1{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:700;max-width:16ch;letter-spacing:-.02em}
+.hero p.lead{font-size:1.3rem;margin:1.5rem 0 0;max-width:38ch;color:#1B2B36}
+.btn{display:inline-block;background:#fff;color:#101B23;padding:.8rem 1.6rem;border-radius:2rem;font-weight:600;text-decoration:none}
+.btn:hover{background:var(--ice)}
+
+section{padding:5rem 0}
+section h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:1.25rem}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2.5rem;margin-top:2.5rem}
+.services h3{font-size:1.4rem;margin-bottom:.5rem;padding-top:.9rem;border-top:3px solid var(--glacier)}
+.services p{margin:0;color:var(--muted)}
+
+.band{background:var(--ice)}
+.about{display:grid;grid-template-columns:1fr;gap:2rem}
+@media(min-width:56rem){.about{grid-template-columns:1fr 1fr;align-items:start}}
+.facts{margin:0;padding:0;list-style:none;border-left:3px solid var(--glow);padding-left:1.25rem}
+.facts li{margin-bottom:.9rem}
+.facts strong{display:block;font-family:var(--head)}
+
+table{width:100%;border-collapse:collapse;margin-top:1.5rem;max-width:44rem}
+th,td{text-align:left;padding:.85rem .5rem;border-bottom:1px solid var(--ice)}
+td:last-child,th:last-child{text-align:right}
+.note{color:var(--muted);font-size:1rem;margin-top:1rem}
+
+#ski{background:linear-gradient(rgba(16,27,35,.62),rgba(16,27,35,.62)),url("images/ski.jpg") center/cover no-repeat;color:#fff}
+#ski .services p{color:#E6EEF2}
+#ski .services h3{border-top-color:#fff}
+#education{background:linear-gradient(rgba(16,27,35,.62),rgba(16,27,35,.62)),url("images/education.jpg") center/cover no-repeat;color:#fff}
+#education .services p{color:#E6EEF2}
+#education .services h3{border-top-color:#fff}
+footer{background:var(--night);color:#E6EEF2;padding:2rem 0}
+footer h2{color:#fff}
+footer .btn{margin-top:1rem}
+footer small{display:block;color:#9DB1BD}
+
+@media(max-width:40rem){nav a{margin-left:1rem}.hero{padding-top:7rem}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top">Alpenflow Guiding</a>
+    <nav aria-label="Main">
+      <a href="#ski">Ski</a>
+      <a href="#education">Education</a>
+      <a href="#guides">Our Guides</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Alpenflow Guiding</h1>
+      <p class="lead">Unique guided ski adventures across the globe</p>
+      <p><a class="btn" href="mailto:info@alpenflowguiding.com">Contact us</a></p>
+    </div>
+  </div>
+
+  <section id="ski">
+    <div class="wrap">
+      <h2>Ski</h2>
+      <div class="services">
+        <div>
+          <h3>Backcountry Skiing</h3>
+          <p>Leave the lift lines behind and experience ski serenity with us! Explore untouched snow in Japan and Colorado. We can accommodate experience levels.</p>
+        </div>
+        <div>
+          <h3>Snowcat Skiing</h3>
+          <p>Want to experience backcountry skiing without all the hiking uphill? We offer private cat skiing trips in Crested Butte and Jones Pass, Colorado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="band">
+    <div class="wrap">
+      <h2>Education</h2>
+      <div class="services">
+        <div>
+          <h3>Avalanche Courses</h3>
+          <p>Be prepared in the backcountry!  Our courses use the AIARE curriculum to teach you the essentials for navigating avalanche terrain.</p>
+        </div>
+        <div>
+          <h3>Wilderness Medicine</h3>
+          <p>Do you have the training to deal with an emergency in the backcountry? Our courses use the Desert Mountain Medicine curriculum to prepare you for medical emergencies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="guides">
+    <div class="wrap">
+      <h2>Our Guides</h2>
+      <div class="services">
+        <div><h3>Eli Weitzman</h3></div>
+        <div><h3>Elise Brizes</h3></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Contact Us</h2>
+    <a class="btn" href="mailto:info@alpenflowguiding.com">Email info@alpenflowguiding.com</a>
+    <small style="margin-top:1.5rem">&copy; 2026 Alpenflow Guiding</small>
+  </div>
+</footer>
+
+</body>
+</html>
